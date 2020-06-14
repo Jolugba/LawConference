@@ -1,0 +1,127 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Screen one  style. -->
+
+    <style name="NameArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/nameArea</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="ConferenceQuestionArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/prata</item>
+        <item name="android:textColor">@color/conferenceQuestionArea</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="favouriteButtonArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="DifferentLawArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/DifferentLawTextArea</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="LegalEventIntroTextArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/LawEventIntoTextArea</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="LegalEventTextArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+    <style name="LegalEventLocationTextArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins_light</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="starArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <!-- Screen two  style. -->
+    <style name="DateTextArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/dateColor</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+
+    <style name="OthersAttendingTextArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/dateColor</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="EventOverviewTextArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/eventOverViewColor</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+    <style name="EventPlanTextArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/eventPlanColor</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+    <style name="registerButtonArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="background">@drawable/button_background</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:alpha">50</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <!-- Screen one background color. -->
+    <color name="screenOneBackgroundColor">#FFFFFF</color>
+    <!-- Name area Text  color. -->
+    <color name="nameArea">#A9A9A9</color>
+    <!-- Conference area Text  color. -->
+    <color name="conferenceQuestionArea">#3C4A6B</color>
+    <!--  Button background   color. -->
+    <color name="buttonColor">#FF724C</color>
+    <!--  hover darkButton background   color. -->
+    <color name="darkButtonColor">#DA4E29</color>
+    <!-- White  color. -->
+    <color name="White">#FFFFFF</color>
+    <!-- Litigation background  color. -->
+    <color name="litigationArea">#E9FEFC</color>
+    <!-- Banking background  color. -->
+    <color name="BankingArea">#F2F3FF</color>
+    <!-- Corporate background  color. -->
+    <color name="CorporateArea">#FFFCEE</color>
+    <!-- Family background  color. -->
+    <color name="FamilyArea">#FFF4F1</color>
+    <!-- Different Law Area Text color. -->
+    <color name="DifferentLawTextArea">#3C4A6B</color>
+    <!--  Law event Intro Text color. -->
+    <color name="LawEventIntoTextArea">#3C4A6B</color>
+    <!-- startButton area   color. -->
+    <color name="starButton">#A9A9A9</color>
+    <!-- Date area Text  color. -->
+    <color name="dateColor">#9296B0</color>
+    <!-- Details Location Text area Text  color. -->
+    <color name="DetailsLocationText">#B3B6CB</color>
+    <!-- othersAttending area Text  color. -->
+    <color name="othersAttending">#B3B6CB</color>
+    <!-- EventOverView area Text  color. -->
+    <color name="eventOverViewColor">#F9663E</color>
+    <!-- event plan area Text  color. -->
+    <color name="eventPlanColor">#CECECE</color>
+    <!-- detail area Text  color. -->
+    <color name="detailsTextColor">#8193AE</color>
+    <color name="registerCardView">#FEF3F0</color>
+</resources>

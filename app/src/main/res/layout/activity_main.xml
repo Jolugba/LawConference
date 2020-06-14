@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screenOneBackgroundColor">
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/favouriteButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+    <Button
+        android:id="@+id/favouriteButton"
+        style="@style/favouriteButtonArea"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/favourite_button_background"
+        android:drawableStart="@drawable/ic_baseline_favorite_24"
+        android:drawablePadding="5dp"
+        android:text="@string/favourite"
+        app:layout_constraintEnd_toStartOf="@+id/picture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/searchIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/favouriteButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/badge"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/badge_indicator"
+        app:layout_constraintCircle="@id/picture"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="22dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <TextView
+        android:id="@+id/nameAreaText"
+        style="@style/NameArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/name_area"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchIcon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/ConferenceQuestionArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Conference_question_area"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameAreaText" />
+
+    <ImageView
+        android:id="@+id/ligitationImage"
+        style="@style/image"
+        android:background="@drawable/ligitatiom_backgroud"
+        app:layout_constraintEnd_toStartOf="@+id/bankingImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_litigation" />
+
+    <ImageView
+        android:id="@+id/bankingImage"
+        style="@style/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banking_area_background"
+        app:layout_constraintEnd_toStartOf="@+id/corporateImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ligitationImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_banking" />
+
+    <ImageView
+        android:id="@+id/corporateImage"
+        style="@style/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corporate_background"
+        app:layout_constraintEnd_toStartOf="@+id/familyImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bankingImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_corporate" />
+
+    <ImageView
+        android:id="@+id/familyImage"
+        style="@style/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/family_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/corporateImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_family" />
+
+    <TextView
+        android:id="@+id/litigationText"
+        style="@style/DifferentLawArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/litigation"
+        app:layout_constraintEnd_toEndOf="@+id/ligitationImage"
+        app:layout_constraintStart_toStartOf="@+id/ligitationImage"
+        app:layout_constraintTop_toBottomOf="@+id/ligitationImage" />
+
+    <TextView
+        android:id="@+id/bankingText"
+        style="@style/DifferentLawArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/banking"
+        app:layout_constraintEnd_toEndOf="@+id/bankingImage"
+        app:layout_constraintStart_toStartOf="@+id/bankingImage"
+        app:layout_constraintTop_toBottomOf="@+id/bankingImage" />
+
+    <TextView
+        android:id="@+id/corporateText"
+        style="@style/DifferentLawArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/corporate"
+        app:layout_constraintEnd_toEndOf="@+id/corporateImage"
+        app:layout_constraintStart_toStartOf="@+id/corporateImage"
+        app:layout_constraintTop_toBottomOf="@+id/corporateImage" />
+
+    <TextView
+        android:id="@+id/familyText"
+        style="@style/DifferentLawArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/family"
+        app:layout_constraintEnd_toEndOf="@+id/familyImage"
+        app:layout_constraintStart_toStartOf="@+id/familyImage"
+        app:layout_constraintTop_toBottomOf="@+id/familyImage" />
+
+        <TextView
+            android:id="@+id/eventsIntroText"
+            style="@style/LegalEventIntroTextArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/law_event_intro"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/litigationText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventsIntroText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

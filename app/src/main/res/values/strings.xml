@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LawConference</string>
+    <string name="name_area">Hey, Joshua!</string>
+    <string name="Conference_question_area">What area of law do\nyou want to explore?</string>
+    <string name="litigation">Litigation</string>
+    <string name="banking">Banking</string>
+    <string name="corporate">Corporate</string>
+    <string name="family">Family</string>
+    <string name="law_event_intro">TOP LEGAL EVENTS</string>
+    <string name="event_1_name">NBA\'19</string>
+    <string name="event_1_location">Lagos, Nigeria</string>
+    <string name="event_2_name">IBA\'19</string>
+    <string name="event_2_location">Seoul, South Korea</string>
+    <string name="event_3_name">AFBA\'19</string>
+    <string name="event_3_location">Cairo, Egypt</string>
+    <string name="event_4_name">IBA\'19</string>
+    <string name="event_4_location">Birmingham, U.K</string>
+    <string name="date">23 Aug- 29 Aug</string>
+    <string name="others_attending">+ 23 Others Attending</string>
+    <string name="event_overview">Event OverView</string>
+    <string name="event_plan">Event Plan</string>
+    <string name="detailsText">The NBA Annual General Conference presents a\nunique yearly opportunity for legal practitioners to\ninterrogate</string>
+    <string name="register_button">Register Now</string>
+    <string name="favourite">Favourite</string>
+    <string name="_4_8">4.8</string>
+</resources>
