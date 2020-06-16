@@ -6,5 +6,6 @@ data class LawEvents(
     var eventTitle: String,
     var rating: String,
     var image: Int,
-    var liked: Boolean = false
+    var liked: Boolean = false,
+    var id:Int=1
 )

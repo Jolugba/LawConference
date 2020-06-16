@@ -41,22 +41,22 @@ openActivity<FavouriteActivity>{}
         eventList.add(LawEvents(getString(R.string.event_1_location),getString(
             R.string.event_1_name
         ),"4.8",
-            R.drawable.uk_location
+            R.drawable.uk_location,id=1
         ))
         eventList.add(LawEvents(getString(R.string.event_2_location),getString(
             R.string.event_2_name
         ),"4.9",
-            R.drawable.seoul_location
+            R.drawable.seoul_location,id=2
         ))
         eventList.add(LawEvents(getString(R.string.event_4_location),getString(
             R.string.event_4_name
         ),"4.8",
-            R.drawable.uk_location
+            R.drawable.uk_location,id=3
         ))
         eventList.add(LawEvents(getString(R.string.event_3_location),getString(
             R.string.event_3_name
         ),"4.5",
-            R.drawable.cairo_location
+            R.drawable.cairo_location,id=4
         ))
 
 
