@@ -12,6 +12,7 @@ import com.example.lawconference.model.LawEvents
 import com.example.lawconference.ui.EventDetailActivity
 import com.example.lawconference.ui.FavouriteActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.event_list_view.*
 
 class MainActivity : AppCompatActivity(), OnEventItemClickListener {
 
@@ -37,14 +38,18 @@ class MainActivity : AppCompatActivity(), OnEventItemClickListener {
 
 
     private fun addEvents() {
-        eventList.add(LawEvents(getString(R.string.event_1_location),getString(R.string.event_1_name),"4.8",R.drawable.lagos_location))
+        eventList.add(LawEvents(getString(R.string.event_1_location),getString(R.string.event_1_name),"4.8",R.drawable.uk_location))
         eventList.add(LawEvents(getString(R.string.event_2_location),getString(R.string.event_2_name),"4.9",R.drawable.seoul_location))
-        eventList.add(LawEvents(getString(R.string.event_3_location),getString(R.string.event_3_name),"4.5",R.drawable.cairo_location))
         eventList.add(LawEvents(getString(R.string.event_4_location),getString(R.string.event_4_name),"4.8",R.drawable.uk_location))
+        eventList.add(LawEvents(getString(R.string.event_3_location),getString(R.string.event_3_name),"4.5",R.drawable.cairo_location))
+
+
+
 
     }
     private fun setRecyclerView() {
         var  spansCount=resources.getInteger(R.integer.spans_column)
+        recyclerView.hasFixedSize()
         recyclerView.layoutManager= StaggeredGridLayoutManager(spansCount,StaggeredGridLayoutManager.VERTICAL)
         recyclerView.adapter=EventAdapter(eventList,this)
 
@@ -59,4 +64,10 @@ class MainActivity : AppCompatActivity(), OnEventItemClickListener {
         intent.putExtra("itemImage", item.image.toString())
         startActivity(intent)
     }
+
+
+
+
+
+
 }

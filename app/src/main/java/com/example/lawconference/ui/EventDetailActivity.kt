@@ -1,7 +1,9 @@
 package com.example.lawconference.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.lawconference.MainActivity
 import com.example.lawconference.R
 import kotlinx.android.synthetic.main.activity_event_detail.*
 
@@ -15,5 +17,10 @@ class EventDetailActivity : AppCompatActivity() {
         itemLocation.text = intent.getStringExtra("itemLocation")
         itemRating.text = intent.getStringExtra("itemRating")
         itemImage.setImageResource(intent.getStringExtra("itemImage").toInt())
+
+        backImage.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
