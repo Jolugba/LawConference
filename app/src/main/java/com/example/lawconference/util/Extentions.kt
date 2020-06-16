@@ -3,7 +3,6 @@ package com.example.lawconference.util
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.widget.Toast
 
 fun Activity.showToast(message:String){
