@@ -8,10 +8,13 @@ import com.example.lawconference.R
 import com.example.lawconference.model.LawEvents
 import kotlinx.android.synthetic.main.event_list_view.view.*
 
-class EventAdapter(private var eventList: List<LawEvents>,var clickListener:OnEventItemClickListener): RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
+class EventAdapter(
+    private var eventList: List<LawEvents>,
+    var clickListener: OnEventItemClickListener
+) : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
-    private fun likeEvent(position: Int, likeStatus:Boolean){
-        eventList[position].liked=!likeStatus
+    private fun likeEvent(position: Int, likeStatus: Boolean) {
+        eventList[position].liked = !likeStatus
         notifyItemChanged(position)
     }
 
@@ -21,11 +24,12 @@ class EventAdapter(private var eventList: List<LawEvents>,var clickListener:OnEv
             itemView.eventTitle.text = item.eventTitle
             itemView.eventLocation.text = item.eventLocation
             itemView.locationImage.setImageResource(item.image)
-            itemView.eventRate.text=item.rating
-            if (item.liked){
-                itemView.likeButton.setBackgroundResource(R.drawable.ic_baseline_favorite_24)
-            }else{
-                itemView.likeButton.setBackgroundResource(R.drawable.ic_red_like_image)
+            itemView.eventRate.text = item.rating
+            if (item.liked) {
+                itemView.likeButton.setImageResource(R.drawable.ic_red_like_image)
+            } else {
+
+                itemView.likeButton.setImageResource(R.drawable.ic_baseline_favorite_24)
             }
 
 
@@ -52,7 +56,7 @@ class EventAdapter(private var eventList: List<LawEvents>,var clickListener:OnEv
         holder.initialize(eventList[position], clickListener)
 
         holder.itemView.likeButton.setOnClickListener {
-            likeEvent(position,eventList[position].liked)
+            likeEvent(position, eventList[position].liked)
         }
 
     }

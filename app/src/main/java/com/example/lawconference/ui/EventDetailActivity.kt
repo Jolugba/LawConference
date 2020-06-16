@@ -1,10 +1,9 @@
 package com.example.lawconference.ui
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.lawconference.MainActivity
 import com.example.lawconference.R
+import com.example.lawconference.util.openActivity
 import kotlinx.android.synthetic.main.activity_event_detail.*
 
 class EventDetailActivity : AppCompatActivity() {
@@ -19,8 +18,7 @@ class EventDetailActivity : AppCompatActivity() {
         itemImage.setImageResource(intent.getStringExtra("itemImage").toInt())
 
         backImage.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            openActivity<MainActivity> { }
         }
     }
 }
