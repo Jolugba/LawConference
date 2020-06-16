@@ -35,7 +35,7 @@ class FavouriteActivity : AppCompatActivity(),OnFavouriteItemClickListener {
     }
 
     private fun addFavourite() {
-        favouriteList.add(FavouriteList("Vitoria Island,Lagos,Nigeria","NBA 2019", R.drawable.ic_banking))
+        favouriteList.add(FavouriteList("Lagos,Nigeria","NBA 2019", R.drawable.ic_banking))
         favouriteList.add(FavouriteList("Seoul,South Korea","IBA 2019", R.drawable.ic_litigation))
         favouriteList.add(FavouriteList("Cairo,Egypt","AFBA 2019", R.drawable.ic_banking))
 
